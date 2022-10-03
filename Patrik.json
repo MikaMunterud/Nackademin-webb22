@@ -1,0 +1,16 @@
+{
+  "firstname": "Patrik",
+  "lastname": "Skantz",
+  "discord": "Skantz",
+  "github": "Pskantz",
+  "personalityType": "Yellow",
+  "birthYear": "1993",
+  "zodiac": {
+    "name": "Leo",
+    "element": "fire",
+    "stone": "onyx",
+    "symbol": "♌",
+    "dateMin": "2000-07-23",
+    "dateMax": "2000-08-22"
+  }
+}
