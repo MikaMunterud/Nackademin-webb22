@@ -8,6 +8,7 @@ function getMember(event) {
     .then((response) => response.json())
     .then((data) => {
       //**Print all information of searched person
+     
       const result = data.filter(
         (person) =>
           person.firstname.toLowerCase() === value.trim().toLowerCase()
@@ -26,7 +27,6 @@ function getMember(event) {
       }
 
       /*
-
       //  print all person by key{firstname,lastname,..}
       data.map((person) => {
          document.querySelector(
@@ -34,18 +34,23 @@ function getMember(event) {
          ).innerHTML += `${value}: ${person[value]}<br>`;
        });
       result.map((person) => console.log(person));
+      */
       
+      /** 
+      ** when using this function, you can enter a firstname and the program will print out the
+      ** fullname and image.
       
          const result = data.filter(
-           (d) => d.firstname.toLowerCase() === value.trim().toLowerCase()
-         );
-         if (result.length > 0) {
-           document.querySelector(
-             "#output"
-           ).innerHTML = `<p>**information**</p>${result[0].firstname} ${result[0].lastname}<br>`;
-           document.querySelector("#image").src = result[0].image;
-         }
-      */
+        (d) => d.firstname.toLowerCase() === value.trim().toLowerCase()
+      );
+      if (result.length > 0) {
+        document.querySelector(
+          "#output"
+        ).innerHTML = `<span>**information**</span><br>${result[0].firstname} ${result[0].lastName}<br>`;
+        document.querySelector("#image").src = result[0].image;
+      }
+    */
+
     });
 
   event.preventDefault();
