@@ -7,7 +7,7 @@ function getMember(event) {
   fetch("members.json")
     .then((response) => response.json())
     .then((data) => {
-      //**Print all information of searched person
+      // Prints all information of the searched person
      
       const result = data.filter(
         (person) =>
